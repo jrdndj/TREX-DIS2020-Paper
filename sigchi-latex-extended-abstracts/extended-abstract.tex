@@ -244,7 +244,7 @@ Novices for this study were undergraduate students from computing courses with b
 
 \subsection{Iterative Prototyping With Code-block Abstractions}
 %To design the prototype, insights gathered from prior user research were used to form user stories that were later converted into features for the tool. Following the interface structure of Scratch developed by \cite{mit:Scratch}, the tool was designed to have three sections \textemdash the code block work space, the code display, and a graph to visualize the model created. 
-Initially, a prototype using static code blocks with similar naming conventions to Scikit-learn's library. Each category of code blocks were assigned specific colors to represent the phases of the ML pipeline. For the static prototype, three code block categories were prepared \textemdash Data Preprocessing, Linear Regression, and Test Model. An interactive prototype was later developed.
+Initially, a prototype using static code blocks with similar naming conventions to Scikit-learn's library was created. Each category of code blocks were assigned specific colors to represent the phases of the ML pipeline. For the static prototype, three code block categories were prepared \textemdash Data Preprocessing, Linear Regression, and Test Model. An interactive prototype was later developed.
 % using Google Blockly (the same code block technology used for Scratch),
 % was used as the main interfacing blocks for the tool.
 % the Scikit Learn Linear Regression library functions 
@@ -259,28 +259,28 @@ Participants were tasked to create Linear Regression systems with two datasets. 
 % Using improvement suggestions from the second iteration, 
 In the third iteration prototype, four (4) tasks were given to the testers to explore the tool's features. A graphical visualization of the model was added to visualize the accuracy of the model. The focus of this iteration is to test the specific features of the iML tool and to observe how visualization of the model would influence the user. The experiment setup for each iteration can be seen in figure \ref{fig:setup}. This setup remained consistent for both the static (first iteration) and interactive (second and third iterations) prototypes tested. 
 % The Participant was positioned in front of a laptop with the prototype available. The Facilitator was positioned beside the participant while tracking screen movement was recorded from the external monitor. The web camera of the desktop computer between the external monitor and the laptop was used to record the participants reactions and displayed the test flow and tasks. A voice recorder was used to record extra audio for the test. 
-After each test, a System Usability Scale (SUS) survey and a word checklist  issued before conducting a short post-test interview to understand the participant's experience using the prototype. 
+After each test, a System Usability Scale (SUS) survey and a word checklist was issued before conducting a short post-test interview to understand the participant's experience using the prototype. 
 
 \subsection{TREX Features}
-TREX is the result of the final iteration testing and was designed to be a web-based interactive tool that aims to provide the user with a sandbox environment for testing and creating Linear Regression Machine Learning Systems that can be used on various datasets. All functions of the tool can be accessed in the main dashboard that is separated into three main sections, each with a specific goal in mind. The three main sections are the Sandbox Environment section, Code Translation and Output section, and the Regression Visualization section. TREX uses code blocks to simulate a Linear Regression system using the parameters set by the user as seen in \ref{fig:IT2_Blocks}. 
+TREX is designed to be a web-based interactive tool that aims to provide the user with a sandbox environment for testing and creating Linear Regression ML Systems. All functions of the tool can be accessed in the dashboard which is separated into three sections as seen in figure \ref{fig:prot3}, each with a specific goal in mind. The three main sections are the Sandbox Environment section (figure \ref{fig:Code_cat}), Code Translationand Output section (figure \ref{fig:Code_output}), and the Regression Visualization section (figure \ref{fig:Code_viz}). TREX uses codeblocks which are connected to code segments similar to functions found in ML systems. We decided to create the system using a full-stack Python setup since we use Scikit-learn's Linear Regression library to run linear regression functions. This also provides easy-access to regression visualization libraries such as matplotlib for Python. When the system is compiled and run, the results are displayed on the output section of the dashboard. TREX uses the native error handling of the library along with custom error handling to address codeblock limitations such as incompatibility.
 
 \section{Results}
 
 Each iteration of the prototype was tested by at least five (5) to ten (10) ML users with varying skill levels, where two (2) of which identified themselves as novice users.
-For iteration 1, all novices were intuitively following a pattern based on the ML Pipeline: Data Preprocessing, Model Training, and Model Testing. They were also consistent when ordering the Fit Data and Predict blocks. They placed the create-model block outside the model bracket. Novice users were observed to be experimental when using data preprocessing & testing blocks. They found the tasks manageable. They also noted that organizing different ML phases by color made it easier, but were confused with the data preprocessing blocks. 
+For iteration 1, all novices were intuitively following a pattern based on the ML Pipeline: Data Preprocessing, Model Training, and Model Testing. They were also consistent when ordering the Fit Data and Predict blocks. They placed the create-model block outside the model bracket which was designed to encompass the block. Novice users were observed to be experimental when using data preprocessing \& testing blocks. They found the tasks manageable. They also noted that organizing different ML phases by color made it easier, but were confused with the data preprocessing blocks. 
 
 
 For iteration 2, most users enjoyed the block connecting sound. It reassures them of their progress and cited how the order of the blocks and categories follow the ML pipeline they identified. However, some users found the tool stressful causing them to skip tasks after misunderstanding how to use it, like stacking blocks horizontally rather than top to bottom. Some struggled figuring out the purpose of the ``Prediction'' block due to its colour being similar to the native Print block as seen in figure \ref{fig:IT2_Blocks}. Some users felt that the tool lacked flexibility when displaying outputs, and creating \& renaming variables while others wanted line numbers with proper error messages similar to traditional IDE's. The SUS survey score from this iteration was an average of 63.00 which falls into Grade D - Poor, seen in table \ref{tab:it2_sus}. This means the tool failed in terms of usability. This may be due to the types of errors participants encountered and their time adjusting and exploring the code blocks. 
 
-\begin{marginfigure}[-7pc]
+\begin{marginfigure}[-45pc]
 \begin{minipage}{\marginparwidth}
      \centering
-    \includegraphics[width=4.5cm,height=7cm]{figures/setup.png}
+    \includegraphics[width=4.5cm,height=6cm]{figures/setup.png}
     \caption{Test Setup for all usability testing of prototypes. The Participant was positioned in front of a laptop with the prototype available. The Facilitator was positioned beside the participant. Screen movement was recorded from the external monitor. The web camera of the desktop computer between the external monitor and the laptop was used to record the participant reactions and displayed the test tasks. A voice recorder was used to record extra audio for the test.}
     \label{fig:setup}
     \end{minipage}
 \end{marginfigure}
-\begin{marginfigure}[-0.5pc]
+\begin{marginfigure}[-8pc]
 \begin{minipage}{\marginparwidth}
      \centering
     \includegraphics[width=4.5cm,height=4.5cm]{figures/IT2.png}
